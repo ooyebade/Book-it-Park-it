@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+     <link rel="stylesheet" type="text/css" href="cssForms.css">
+    <center><img src="federalreserv.png" alt="Federal Reserve" width="500" height="333"></center>
+</head>
+<body>
+    <h1><center>Federal Reserve Bank of Richmond</center></h1>   
+        
+        <h2><center>Conference Rooms Reservation</center></h2>
+    <div class="dropdown">
+		<div class="dropdown-content">
+			<select>
+                <option disabled selected value> -- Select an option -- </option>
+                <option id = "selected" href="#">Already reserved</option>
+                <option>Still available</option>
+            </select>
+		</div>
+	</div>
+    <br>
+    <TR>
+        <TD>Conference Name</TD>
+        <TD ALIGN="left"><INPUT TYPE="text" SIZE="25" NAME="cname"></INPUT>
+        </TD>
+    </TR>
+    <TR>
+        <TD>Employee Email</TD>
+        <TD ALIGN="left"><INPUT TYPE="text" SIZE="25" NAME="email"></INPUT>
+        </TD>
+    </TR>
+    <TR>
+        <TD>Employee ID</TD>
+        <TD ALIGN="left"><INPUT TYPE="text" SIZE="25" NAME="eid"></INPUT>
+        </TD>
+    </TR>
+    <TR>
+        <TD>Number of Attendees</TD>
+        <TD ALIGN="left"><INPUT TYPE="text" SIZE="25" NAME="numbofatt"></INPUT>
+        </TD>
+        <TR>
+			<TD class = "select">Conference Room Number </TD>
+			<TD ALIGN="center">
+				<select>   
+                    <option disabled selected value> -- Select an option -- </option>
+					<option value="A1015">Room A1015</option>
+					<option value="B2105">Room B2105</option>
+					<option value="C3112">Room C3112</option>
+					<option value="D4004">Room D4004</option>
+					<option value="B2005">Room B2005</option>
+					<option value="C3016">Room C3016</option>
+					<option value="D4010">Room D4010</option>
+				</select>
+			</TD> 
+    </TR>  
+        </TR>
+    <p>Before leaving the room, please select:</p>
+    <form>
+        
+        <input type="radio" name="employee" value="vacated"> Vacated <br>
+        <input type="radio" name="employee" value="occupied"> Occupied <br> 
+    </form>
+    <br>
+        <INPUT TYPE="submit" VALUE="Submit"></INPUT>
+        <INPUT TYPE="reset" VALUE="Clear"></INPUT>
+    </body>
+</html>
